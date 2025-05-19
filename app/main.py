@@ -2,7 +2,7 @@ import base64
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from models.connection import Connection
+from app.models.connection import Connection
 from schema.categoria_schema import CategoriaSchema, CategoriaSchemaUdate
 from schema.producto_schema import ProductoSchema, ProductoSchemaUdate
 
