@@ -3,8 +3,8 @@ import base64
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from app.models.connection import Connection
-from schema.categoria_schema import CategoriaSchema, CategoriaSchemaUdate
-from schema.producto_schema import ProductoSchema, ProductoSchemaUdate
+from app.schema.categoria_schema import CategoriaSchema, CategoriaSchemaUdate
+from app.schema.producto_schema import ProductoSchema, ProductoSchemaUdate
 
 app = FastAPI()
 app.add_middleware(
